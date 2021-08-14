@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slave</class>
+ <widget class="QMainWindow" name="slave">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Setting Slave</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 248, 254)
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>614</width>
+         <height>689</height>
+        </rect>
+       </property>
+       <widget class="QFrame" name="seial_workspace">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>611</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255)</string>
+        </property>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>30</y>
+           <width>451</width>
+           <height>621</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="title">
+          <string>Device setting</string>
+         </property>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>60</y>
+            <width>41</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>No</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Slave Address</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>160</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Function</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="no">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>50</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="slaveaddress">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>100</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="function">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>150</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>0x01 (Read Coil Register)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x02 (Read Discrete Register)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x03 (Read Holding Register)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x04  (Read Input Register)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x05 (Write Coil Register)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x06 (Write Holding Register)</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>210</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Device Channel</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="devicechannel">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>200</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>260</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Data Type</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>310</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Device Type</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>360</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Device Name</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="devicename">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>350</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>410</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Channel Title</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="channeltitle">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>400</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>460</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Value Type</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>510</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Scale</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="scale">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>500</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="save">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>570</y>
+            <width>151</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>SAVE</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="datatype">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>250</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>UINT16</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>INT16</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UINT32</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>INT32</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FLOAT32</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="devicetype">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>300</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>INVERETER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>METER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>WEATHER STATION</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="valuetype">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>450</y>
+            <width>241</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>NUMBER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BOOLEAN</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>STRING</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
